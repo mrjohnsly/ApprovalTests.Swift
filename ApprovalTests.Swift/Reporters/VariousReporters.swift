@@ -68,3 +68,14 @@ public class ReportWithVisualStudioCode: GenericDiffReporter {
         )
     }
 }
+
+public class ReportWithFileMerge: GenericDiffReporter {
+    public init() {
+        super.init(
+            programPath: "/usr/bin/opendiff",
+            arguments: { received, approved in
+                [received, approved]
+            }
+        )
+    }
+}
