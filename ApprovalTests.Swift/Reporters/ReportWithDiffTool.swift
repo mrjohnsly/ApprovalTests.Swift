@@ -17,7 +17,8 @@ public class ReportWithDiffTool: FirstWorkingReporter {
             ReportWithKdiff3(),
             ReportWithTKDiff(),
             ReportWithVisualStudioCode(),
-            ReportContentsWithXCTest()
+            ReportContentsWithXCTest(),
+            ReportWithFileMerge()
             // end-snippet
         )
     }
